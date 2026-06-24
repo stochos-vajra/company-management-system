@@ -5,7 +5,6 @@ from . models import *
 
 class CompanySerializer(serializers.ModelSerializer):
 
-    # company_type = serializers.CharField(source="company_Type.name", read_only=True)
 
     class Meta:
 
@@ -16,22 +15,16 @@ class CompanySerializer(serializers.ModelSerializer):
 
 
 class ProductSerializer(serializers.ModelSerializer):
-    # company_id = serializers.SerializerMethodField()
-    # company_name = serializers.SerializerMethodField()
-    # category_id = serializers.SerializerMethodField()
-    # category_name = serializers.SerializerMethodField()
 
     class Meta:
         model = Product
-        # fields = ["Product_id", "name", "price", "image", "created_date", "updated_date", "active", "company_id", "company_name", "category_id", "category_name"]
         fields = "__all__"
     
         
 
 class CategorySerializer(serializers.ModelSerializer):
 
-    # company = serializers.CharField(source="company.name",read_only=True)
-    # company_id = serializers.SerializerMethodField()
+
  
     class Meta:
 
@@ -71,20 +64,6 @@ class CustomerSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
-# class OrderSerializer(serializers.ModelSerializer):
-
-
-#     class Meta:
-#         model = Orders
-#         fields = '__all__'
-
-# class OrderSerializer(serializers.ModelSerializer):
-#     vat_percentage = serializers.DecimalField(max_digits=5, decimal_places=2, required=False, write_only=True)
-#     final_total = serializers.DecimalField(max_digits=10, decimal_places=2, read_only=True)
-
-#     class Meta:
-#         model = Orders  # Assuming your model is named Order
-#         fields = "__all__"
 
     
 class OrderSerializer(serializers.ModelSerializer):

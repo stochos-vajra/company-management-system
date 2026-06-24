@@ -1,7 +1,6 @@
 from django.urls import path, include
 
 
-# from .views import getProductData, getCompanyData, addCompany, addProductData,addCategoryData, getCategoryData, addCompany_Type, getCompany_Type, getCustomerData
 
  
 from .views import *
