@@ -39,4 +39,4 @@ python manage.py runserver
 
 ## API Preview
 
-![API](Screenshots/APIs.png)
+![API](Screenshots/APIS.png)
