@@ -4,6 +4,6 @@ db.sqlite3
 *.sqlite3
 *.jpg
 *.jpeg
-*.png
+
 *.JPG
 *.webp

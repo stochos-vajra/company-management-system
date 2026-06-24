@@ -32,3 +32,11 @@ python manage.py runserver
 - GET/POST /Category/org_name/
 - GET/POST /Customer/org_name/
 - GET/POST /Orders/org_name/
+
+## UI Preview
+
+![Company List](Screenshots/CompanyList.png)
+
+## API Preview
+
+![API](Screenshots/APIs.png)
